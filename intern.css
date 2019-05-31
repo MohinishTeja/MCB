@@ -1,0 +1,160 @@
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	font-family: 'Poppins', sans-serif;
+	background: linear-gradient(to right, #834d9b, #d04ed6);
+	color: #FFF;
+
+}
+
+.nav-links li{
+	list-style: none;
+	border: 1px solid #fff;
+	padding: 5px 20px;
+	color: #fff;
+}
+.nav-links{
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+	font-size: 100%;
+	color: #FFF;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	width: 100%;
+	min-height: 125vh;
+}
+
+.wave {
+	position: relative;
+	background: linear-gradient(to right, #834d9b, #d04ed6);
+}
+
+.wave:before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 245px;
+	background: url(wave.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.img {
+	position: absolute;
+	margin-left: 40%;
+	margin-right: 40%;
+	margin-top: 10%;
+}
+
+.text1 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 7vh;
+	letter-spacing: 3vh;
+	position: absolute;
+	margin-top: 31%;
+	margin-left: 2%;
+	color: #FFF;
+}
+.text2 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 5vh;
+	letter-spacing: 3vh;
+	position: absolute;
+	margin-top: 35%;
+	margin-left: 25%;
+	color: #FFF;
+
+}
+.last {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	font-family: 'Poppins', sans-serif;
+	background: linear-gradient(to right, #834d9b, #d04ed6);
+	font-size: 5vh;
+	color: #FFF;
+
+}
+
+.par1 {
+	width: 100%;
+	min-height: 50vh;
+}
+
+.head1 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 5vh;
+	margin-left: 10%;
+}
+.head2 {
+	font-family: 'Poppins',sans-serif;
+	font-size: 3vh;
+	line-height: 4vh;
+	margin-left: 10%;
+	margin-right: 50%;
+	color: #808080;
+}
+.headi1 {
+	margin-left: 60%;
+	position: absolute;
+}
+
+.par2 {
+	width: 100%;
+	min-height: 50vh;
+}
+
+.head11 {
+	font-family: 'Poppins',sans-serif;
+	font-size: 5vh;
+	margin-left: 51%;
+}
+
+.head22 {
+	font-family: 'Poppins',sans-serif;
+	font-size: 2.5vh;
+	line-height: 4vh;
+	margin-left: 50%;
+	margin-right: 10%;
+	color: #808080;
+}
+
+.headi2 {
+	position: absolute;
+	min-height: 50vh;
+	margin-left: 10%;
+}
+
+.par3 {
+	width: 100%;
+	min-height: 50vh;
+}
+.head111 {
+	font-family: 'Poppins', sans-serif;
+	font-size: 5vh;
+	margin-left: 10%;
+}
+
+.head222 {
+	font-family: 'Poppins',sans-serif;
+	font-size: 3vh;
+	line-height: 4vh;
+	margin-left: 10%;
+	margin-right: 50%;
+	color: #808080;
+}
+
+.headi3 {
+	margin-left: 60%;
+	position: relative;
+	min-height: 1vh;
+}
