@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ICC World Cup 2019</title>
+	<link rel="icon" href="icclogo.png">
+	<link rel="stylesheet" type="text/css" href="intern.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style>
+form {border: 3px solid #fff;}
+
+input[type=text], input[type=email], select {
+  width: 49%;
+  font-size:20px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  cursor: pointer;
+  width: 75%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+span.psw {
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+}
+</style>	
+</head>
+<body>
+		<nav>
+		<div class="logo">
+			<h3>ICC CWC19</h3>
+		</div>
+
+		<ul class="nav-links">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+
+			<li>
+				<a href="skills.html">Points Table</a>
+			</li>
+
+			<li>
+				<a href="myprojects.html">Videos</a>
+			</li>
+			<li>
+				<a href="connect.html">Connect</a>
+			</li>
+		</ul>
+		</nav>
+
+
+	<section class="wave">
+		<div class="img">
+			<img src="icclogo.png">
+		</div>
+		<div class="text1">
+			ICC CRICKET WORLD CUP 2019
+		</div>
+		<div class="text2">
+			England and Wales
+		</div>
+		<div id="particles-js"></div>
+	<canvas>
+			
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    
+	</canvas>
+
+	</section>
+	<div class="par1">
+		<div class="head1">History</div>
+		<div class="headi1">
+			<img src="wc1.jpg" width="150%" height="150%">
+		</div>
+		<div class="head2">
+			The first World Cup was organised in England in June 1975, with the first ODI cricket match having been played only four years earlier. However, a separate Women's Cricket World Cup had been held two years before the first men's tournament, and a tournament involving multiple international teams had been held as early as 1912, when a triangular tournament of Test matches was played between Australia, England and South Africa.
+		</div>
+		
+	</div>
+	<div class="par2">
+		<div class="headi2">
+			<img src="wc2.jpg" height="150%" width="150%">
+		</div>
+		<div class="head11">
+			ICC World Cup 2015	
+		</div>
+		<div class="head22">
+			The 2015 ICC Cricket World Cup was the 11th Cricket World Cup, jointly hosted by Australia and New Zealand from 14 February to 29 March 2015. Australia defeated New Zealand by 7 wickets to win their fifth Cricket World Cup. Fourteen teams played 49 matches in 14 venues, with Australia staging 26 games at grounds in Adelaide, Brisbane, Canberra, Hobart, Melbourne, Perth and Sydney while New Zealand hosted 23 games in Auckland, Christchurch, Dunedin, Hamilton, Napier, Nelson and Wellington.
+		</div>
+	</div>
+	<div class="par3">
+		<div class="head111">
+			ICC World Cup 2019
+		</div>
+		<div class="head222">
+			The 2019 ICC Cricket World Cup is the 12th edition of the Cricket World Cup, being hosted by England and Wales from 30 May to 14 July 2019.
+			The hosting rights were awarded in April 2006, after England and Wales withdrew from the bidding to host the 2015 ICC Cricket World Cup, which was held in Australia and New Zealand.
+		</div>
+		<div class="headi3">
+			<img src="wc3.jpg">
+		</div>
+		
+	</div>
+	<div class="card">
+	<div class="container">
+		<div class="card">
+			<div class="face face1">
+				<div class="content">
+					<h2>West Indies</h2>
+					<p>West Indies won the 1975 World Cup against England.West Indies won by 92 runs.</p>
+				</div>
+			</div>
+			<div class="face face2">
+				<h2>1975</h2>
+			</div>
+		</div>
+		<div class="card">
+			<div class="face face1">
+				<div class="content">
+					<h2>Australia</h2>
+					<p>Australia won the World Cup by defeating New Zealand by 7 wickets.</p>
+				</div>
+			</div>
+			<div class="face face2">
+				<h2>2015</h2>
+			</div>
+		</div>
+		<div class="card">
+			<div class="face face1">
+				<div class="content">
+					<h2>?</h2>
+					<p>2019 World Cup is being held in England and Wales</p>
+				</div>
+			</div>
+			<div class="face face2">
+				<h2>2019</h2>
+			</div>
+		</div>
+	</div>
+</div>
+	<center><h1 style="color:#000">Contact</h1></center>
+
+<form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off"> 
+<input id="nameField" name="entry.142134144" placeholder="Name" type="text" required><br> 
+<input id="emailField" name="entry.112318048" placeholder="Email Id" type="email" required><br> 
+<input id="mobField" name="entry.238653312" placeholder="phone Number" type="text" pattern="^\d{10}$" required>  
+<button id="send" type="submit" class="common_btn">Submit</button>
+</form>
+
+<h3 id="success-msg" style="text-align: center !important; margin-top:190px !important; display:none; color:#000"> Submitted!!</h3>
+<script>
+function postToGoogle() {
+                var field1 = $("#nameField").val();
+                var field2 = $("#emailField").val();
+                var field3 = $("#mobField").val();
+ 				
+				if(field1 == ""){
+					alert('Please Fill Your Name');
+					document.getElementById("nameField").focus();
+					return false;
+				}
+				if(field2 == ""){
+					alert('Please Fill Your Email');
+					document.getElementById("emailField").focus();
+					return false;
+				}
+				if(field3 == "" || field3.length > 10 || field3.length < 10){
+					alert('Please Fill Your Mobile Number');
+					document.getElementById("mobField").focus();
+					return false;
+				}
+
+
+				
+	
+                $.ajax({
+                    url: "https://docs.google.com/forms/d/e/1FAIpQLSdp1xk7wZiFFyzES26dw5_Q0pnH3QoubfKHGYm78ua7id3AGg/formResponse?",
+					data: {"entry.142134144": field1, "entry.112318048": field2, "entry.238653312": field3},
+                    type: "POST",
+                    dataType: "xml",
+                    success: function(d)
+					{
+					},
+					error: function(x, y, z)
+						{
+
+							$('#success-msg').show();
+							$('#form').hide();
+							
+						}
+                });
+				return false;
+            }
+</script>
+
+<footer>
+	<div class="last">
+		Proudly developed and maintained by MYSELF.
+	</div>
+</body>
+</html>
